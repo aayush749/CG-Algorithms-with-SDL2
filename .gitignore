@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Visual Studio ignores
+.vs/
+x64/
+LineDrawing/x64/Debug/
