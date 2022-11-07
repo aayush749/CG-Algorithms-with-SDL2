@@ -1,1 +1,1 @@
-# LineDrawing
+# Computer Graphics Algorithms with SDL-2
