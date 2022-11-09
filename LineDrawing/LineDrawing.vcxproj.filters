@@ -18,6 +18,9 @@
     <ClCompile Include="src\GfxSubsytem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\CompositeTrans2DPoly_Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GfxSubsystem.h">
@@ -57,6 +60,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Scale2DPoly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CompositeTrans2DPoly.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

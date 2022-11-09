@@ -136,12 +136,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\CompositeTrans2DPoly_Test.cpp" />
     <ClCompile Include="src\GfxSubsytem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Bresenham.h" />
     <ClInclude Include="src\BresenhamCircle.h" />
     <ClInclude Include="src\CohenSutherland.h" />
+    <ClInclude Include="src\CompositeTrans2DPoly.h" />
     <ClInclude Include="src\CyrusBeck.h" />
     <ClInclude Include="src\DAlg.h" />
     <ClInclude Include="src\DDA.h" />
