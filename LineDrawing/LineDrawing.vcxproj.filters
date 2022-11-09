@@ -44,5 +44,17 @@
     <ClInclude Include="src\CohenSutherland.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\CyrusBeck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MidPointEllipse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trans2DPoly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rot2DPoly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

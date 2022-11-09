@@ -14,6 +14,10 @@ struct DDAArgs: public DAlgArgs
 class DDA : public DAlg
 {
 public:
+    DDA(SDL_Color color = BLUE)
+        :m_Color(color)
+    {}
+
 	const std::vector<std::pair<SDL_Point, SDL_Color>>& draw(const DAlgArgs& args) override
 	{
         const DDAArgs& ddaArgs = static_cast<const DDAArgs&>(args);
@@ -36,7 +40,7 @@ public:
                         x = x + 1;
                         y = y + m;
 
-                        putpixel(round(x), round(y), BLUE);
+                        putpixel(round(x), round(y), m_Color);
                     }
                 }
                 else
@@ -47,7 +51,7 @@ public:
                         x = x + 1 / m;
                         y = y + 1;
                         
-                        putpixel(round(x), round(y), BLUE);
+                        putpixel(round(x), round(y), m_Color);
                     }
                 }
             }
@@ -61,7 +65,7 @@ public:
                         x = x + 1;
                         y = y - abs(m);
                         
-                        putpixel(round(x), round(y), BLUE);
+                        putpixel(round(x), round(y), m_Color);
                     }
                 }
                 else
@@ -72,7 +76,7 @@ public:
                         x = x + 1 / abs(m);
                         y = y - 1;
                         
-                        putpixel(round(x), round(y), BLUE);
+                        putpixel(round(x), round(y), m_Color);
                     }
                 }
             }
@@ -89,7 +93,7 @@ public:
                         x = x - 1;
                         y = y - m;
                         
-                        putpixel(round(x), round(y), BLUE);
+                        putpixel(round(x), round(y), m_Color);
                     }
                 }
                 else
@@ -100,7 +104,7 @@ public:
                         x = x - 1 / m;
                         y = y - 1;
                         
-                        putpixel(round(x), round(y), BLUE);
+                        putpixel(round(x), round(y), m_Color);
                     }
                 }
             }
@@ -114,7 +118,7 @@ public:
                         x = x - 1;
                         y = y + abs(m);
                         
-                        putpixel(round(x), round(y), BLUE);
+                        putpixel(round(x), round(y), m_Color);
                     }
                 }
                 else
@@ -125,7 +129,7 @@ public:
                         x = x - 1 / abs(m);
                         y = y + 1;
                         
-                        putpixel(round(x), round(y), BLUE);
+                        putpixel(round(x), round(y), m_Color);
                     }
                 }
             }
@@ -140,5 +144,6 @@ protected:
     }
 
 protected:
+    SDL_Color m_Color;
     std::vector<std::pair<SDL_Point, SDL_Color>> m_Pixels;
 };

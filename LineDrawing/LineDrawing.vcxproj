@@ -106,6 +106,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)include;C:\SDKs\SDL2\SDL2-2.0.14\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,6 +124,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)include;C:\SDKs\SDL2\SDL2-2.0.14\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,11 +142,15 @@
     <ClInclude Include="src\Bresenham.h" />
     <ClInclude Include="src\BresenhamCircle.h" />
     <ClInclude Include="src\CohenSutherland.h" />
+    <ClInclude Include="src\CyrusBeck.h" />
     <ClInclude Include="src\DAlg.h" />
     <ClInclude Include="src\DDA.h" />
     <ClInclude Include="src\GfxSubsystem.h" />
     <ClInclude Include="src\MidpointCircle.h" />
+    <ClInclude Include="src\MidPointEllipse.h" />
     <ClInclude Include="src\MidpointLDA.h" />
+    <ClInclude Include="src\Rot2DPoly.h" />
+    <ClInclude Include="src\Trans2DPoly.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
