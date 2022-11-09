@@ -150,6 +150,7 @@
     <ClInclude Include="src\MidPointEllipse.h" />
     <ClInclude Include="src\MidpointLDA.h" />
     <ClInclude Include="src\Rot2DPoly.h" />
+    <ClInclude Include="src\Scale2DPoly.h" />
     <ClInclude Include="src\Trans2DPoly.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
